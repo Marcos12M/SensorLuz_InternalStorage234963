@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLuzGuardada1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luz guardada [1]: "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtLuzGuardada2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luz guardada [2]: "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/txtLuzGuardada1"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtLuzActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luz actual: "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/txtLuzGuardada2"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="301dp"
+        android:layout_height="366dp"
+        android:layout_below="@id/txtLuzActual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tqm_diego" />
+
+    <Button
+        android:id="@+id/btnGuardar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar en el apartado 1"
+        android:textSize="18sp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnGuardar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar en el apartado 2"
+        android:textSize="18sp"
+        android:layout_below="@id/btnGuardar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>
